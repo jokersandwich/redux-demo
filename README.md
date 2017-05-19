@@ -1,6 +1,5 @@
-# redux-demo
-
-笔记
+# hello world
+<strong>笔记</strong>
 
 1.Web 应用是一个状态机，视图与状态是一一对应的。
 
@@ -12,3 +11,4 @@
 
 Redux工作流程：
 
+<img src="http://www.ruanyifeng.com/blogimg/asset/2016/bg2016091802.jpg" />
