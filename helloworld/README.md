@@ -1,4 +1,4 @@
-# redux-demo
+# hello world
 <strong>笔记</strong>
 
 1.Web 应用是一个状态机，视图与状态是一一对应的。
