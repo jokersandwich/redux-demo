@@ -3,7 +3,7 @@
 <strong>笔记</strong>
 
 redux项目常用json配置：
-
+`
   "dependencies": {
 
     "babel-core": "^6.4.5",
@@ -25,3 +25,4 @@ redux项目常用json配置：
     "redux": "^3.0.5",
 
   }
+`
