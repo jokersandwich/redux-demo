@@ -6,6 +6,8 @@ redux项目常用json配置：
 
     "dependencies": {
 
+      //babel
+      
       "babel-core": "^6.4.5",
 
       "babel-loader": "^6.2.1",
@@ -16,6 +18,8 @@ redux项目常用json配置：
 
       "babel-preset-react": "^6.3.13",
 
+      //react
+      
       "react": "^0.14.6",
 
       "react-dom": "^0.14.6",
