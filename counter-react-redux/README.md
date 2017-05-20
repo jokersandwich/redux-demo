@@ -4,7 +4,7 @@
 
 redux项目常用json配置：
 
-（版本按需更新）
+（版本不重要，用最新的就行）
 
     "dependencies": {
 
