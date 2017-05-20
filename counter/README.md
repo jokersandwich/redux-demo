@@ -1,1 +1,1 @@
-# a counter without react-redux
+# counter without react-redux
