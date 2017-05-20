@@ -12,7 +12,7 @@ redux项目常用json配置：
 
       "babel-loader": "^6.2.1",
 
-      "babel-plugin-transform-es2015-arrow-functions": "^6.4.0",    //看到过不同的babel-plugin
+      "babel-plugin-transform-es2015-arrow-functions": "^6.4.0",//看到过不同的babel-plugin
 
       "babel-preset-es2015": "^6.3.13",
 
