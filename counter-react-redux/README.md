@@ -32,4 +32,4 @@ redux项目常用json依赖：
 
     }
 
-`npm init` 创建package.json文件，添加以上依赖，redux基本就可以运行。
+`npm init` 创建package.json文件，添加以上依赖，redux就基本可以运行。
