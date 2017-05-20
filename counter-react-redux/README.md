@@ -2,7 +2,7 @@
 
 <strong>笔记</strong>
 
-redux项目常用json配置：
+redux项目常用json依赖：
 
 （版本用最新的就行）
 
