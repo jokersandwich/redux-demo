@@ -4,7 +4,7 @@
 
 redux项目常用json配置：
 
-  `"dependencies": {
+  "dependencies": {
   
     "babel-core": "^6.4.5",
     
@@ -22,4 +22,4 @@ redux项目常用json配置：
     
     "react-redux": "^4.0.6",
     
-    "redux": "^3.0.5",`
+    "redux": "^3.0.5",
