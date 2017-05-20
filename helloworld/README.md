@@ -1,4 +1,4 @@
-# hello world
+# a helloworld with react, redux and react-redux
 <strong>笔记</strong>
 
 1.Web 应用是一个状态机，视图与状态是一一对应的。
