@@ -4,7 +4,7 @@
 
 redux项目常用json配置：
 
-  "devDependencies": {
+  `"devDependencies": {
   
     //版本按需更新
     
@@ -30,4 +30,4 @@ redux项目常用json配置：
     
     "redux": "^3.0.5",
     
-  }
+  }`
