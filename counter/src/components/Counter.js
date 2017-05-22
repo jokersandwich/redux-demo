@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
 class Counter extends Component {
-  static propTypes = {  //static
+  static propTypes = {  //static的作用？
     value: PropTypes.number.isRequired,
     onIncrement: PropTypes.func.isRequired,
     onDecrement: PropTypes.func.isRequired
@@ -10,7 +10,7 @@ class Counter extends Component {
   
   incrementIfOdd = () => {  //不需要声明吗？
     if (this.props.value % 2 !== 0) {
-      this.props.onIncrement();
+      this.props.onIncrement(); //为什么下面的onIncrement可以直接调用，这里要通过this.props？
     }
   }
   
