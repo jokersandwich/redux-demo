@@ -11,11 +11,6 @@ module.exports = {
             loader: 'babel-loader', 
             query: {
                 presets: ['es2015','react','stage-0'],
-                plugins: [
-                  "transform-es2015-modules-commonjs",
-                  "transform-react-constant-elements",
-                  "transform-es2015-arrow-functions"
-               ]
             }
         }]
     }

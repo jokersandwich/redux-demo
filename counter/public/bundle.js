@@ -10518,6 +10518,7 @@ var Counter = function (_Component) {
     }
 
     return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = Counter.__proto__ || Object.getPrototypeOf(Counter)).call.apply(_ref, [this].concat(args))), _this), _this.incrementIfOdd = function () {
+      //不需要声明吗？
       if (_this.props.value % 2 !== 0) {
         _this.props.onIncrement();
       }
@@ -10534,35 +10535,38 @@ var Counter = function (_Component) {
           onIncrement = _props.onIncrement,
           onDecrement = _props.onDecrement;
 
-      return _react2.default.createElement(
-        'p',
-        null,
-        'Clicked: ',
-        value,
-        ' times',
-        ' ',
+      return (
+        //为什么放在一个p里？有buton的情况下
         _react2.default.createElement(
-          'button',
-          { onClick: onIncrement },
-          '+'
-        ),
-        ' ',
-        _react2.default.createElement(
-          'button',
-          { onClick: onDecrement },
-          '-'
-        ),
-        ' ',
-        _react2.default.createElement(
-          'button',
-          { onClick: this.incrementIfOdd },
-          'Increment if odd'
-        ),
-        ' ',
-        _react2.default.createElement(
-          'button',
-          { onClick: this.incrementAsync },
-          'Increment async'
+          'p',
+          null,
+          'Clicked: ',
+          value,
+          ' times',
+          ' ',
+          _react2.default.createElement(
+            'button',
+            { onClick: onIncrement },
+            '+'
+          ),
+          ' ',
+          _react2.default.createElement(
+            'button',
+            { onClick: onDecrement },
+            '-'
+          ),
+          ' ',
+          _react2.default.createElement(
+            'button',
+            { onClick: this.incrementIfOdd },
+            'Increment if odd'
+          ),
+          ' ',
+          _react2.default.createElement(
+            'button',
+            { onClick: this.incrementAsync },
+            'Increment async'
+          )
         )
       );
     }
@@ -10571,7 +10575,7 @@ var Counter = function (_Component) {
   return Counter;
 }(_react.Component);
 
-Counter.propTypes = {
+Counter.propTypes = { //static
   value: _propTypes2.default.number.isRequired,
   onIncrement: _propTypes2.default.func.isRequired,
   onDecrement: _propTypes2.default.func.isRequired
@@ -10586,21 +10590,21 @@ exports.default = Counter;
 
 
 Object.defineProperty(exports, "__esModule", {
-  value: true
+	value: true
 });
 
 exports.default = function () {
-  var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 0;
-  var action = arguments[1];
+	var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 0;
+	var action = arguments[1];
 
-  switch (action.type) {
-    case 'INCREMENT':
-      return state + 1;
-    case 'DECREMENT':
-      return state - 1;
-    default:
-      return state;
-  }
+	switch (action.type) {
+		case 'INCREMENT':
+			return state + 1;
+		case 'DECREMENT':
+			return state - 1;
+		default:
+			return state;
+	}
 };
 
 /***/ }),
@@ -10685,15 +10689,18 @@ var render = function render() {
     value: store.getState(),
     onIncrement: function onIncrement() {
       return store.dispatch({ type: 'INCREMENT' });
-    },
-    onDecrement: function onDecrement() {
+    } //onIncrement为什么写在属性里？
+    , onDecrement: function onDecrement() {
       return store.dispatch({ type: 'DECREMENT' });
-    }
+    } //↑因为要调用store?
   }), rootEl);
 };
 
 render();
-store.subscribe(render);
+store.subscribe(render); //一旦state变化，就执行render;
+
+//store的三个方法store.getState()、store.dispatch()、store.subscribe()都在这一页调用；
+//在react-redux中，可以把state和dispatch都注入给组件，在组件中使用更方便；
 
 /***/ }),
 /* 93 */
