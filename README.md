@@ -1,12 +1,10 @@
 # redux-demo
 
-## 更新
+### 更新
 
 - 使用了 `react-redux` 和 `babel-plugin-transform-decorators-legacy` ，通过连接件和 `@connect` 装饰器写法，组件方便的获取 state 和 actionCreators。
 - 使用了 `redux-thunk` 异步中间件。
 - 使用了 ReduxDevTools。
-
-## 笔记
 
 ### 概念
 
